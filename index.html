@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcos Fernandez </title>
-    <link rel="stylesheets" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="code.js"></script>
 
 </head>
@@ -13,36 +13,122 @@
 <body>
 <!--        MENÚ                -->
     <header id="menu">
-        <!-- Aca hago un menú de las secciones de la página -->
+        <!-- Aca hago un menú de las secciones de la página --> <!-- acerca de mi, skills, proyectos, contacto -->
+         <nav class="navBar">
+            <a id="menuMarcos" href="#presInicialSec">Marcos</a>
+             <ul class="navLinks">
+                 <li class="li"><a class="liColor" href="#acercaDeMi">Acerca de mi</a></li>
+                 <li class="li"><a class="liColor" href="#experienciaSec">Skills</a></li>
+                 <li class="li"><a class="liColor" href="#proyectos">Proyectos</a></li>
+                 <li class="li"><a class="liColor" href="#contacto">Contacto</a></li>
+             </ul>
+         </nav>
     </header>
 
 <!--        PRESENTACION       -->
-    <section id="presInicialSec">
-        <div id="presConFoto">
-            
+    <section id="presentacionSec">
+        <div class="presConFoto">
+            <div id="fotoContenedor">
+                <img src="/imgs/yo.jpg" alt="MarcosFernadez foto" id="foto" width="250px">
+            </div>
+            <section class="fotoDescripcionSec" id="acercaDeMi">
+                <h2>MARCOS</h2>
+                <h2>FERNÁNDEZ<span id="punto"> .</span></h1>
+                <h3 class="descripcion">ESTUDIANTE DE PROGRAMACION</h3>
+            </section>
         </div>
-        <div id="presGeneral">
+        <div class="presGeneral">
+            <article class="sobreMi">
+                <p>Comencé a interesarme en el mundo de la programación al escuchar charlas entre dos amigos que trabajaban en la industria.
+                    Las charlas sonaban interesantes pero no lograba entender mucho al respecto.
+                    <br>Asique decidí <a href="#experienciaSec">investigar...</a>
 
+                </p>
+            </article>
         </div>
     </section>
 
 <!--        EXPERIENCIA         -->
-    <section>
-        <div id="skills">
-
+    <section id="experienciaSec">
+        <div class="skillsContenedor">
+            <h3 class="skillsTitulo">SKILLS</h3>
+            <div class="skills">
+                <div class="logos" id="htmlContenedor">
+                    <img width="50px" src="/imgs/skills iguales/html512h.png" alt="HTML Logo">
+                </div>
+                <div class="logos" id="cssContenedor">
+                    <img width="50px" src="/imgs/skills iguales/css512h.png" alt="CSS Logo">
+                </div>
+                <div class="logos" id="cSharpContenedor">
+                    <img width="50px" src="/imgs/skills iguales/csharp512h.png" alt="C# Logo">
+                </div>
+                <div class="logos" id="puntoNetContenedor">
+                    <img width="50px" src="/imgs/skills iguales/puntoNetLogo.png" alt=".NET Logo">
+                </div>
+                <div class="logos" id="slqContenedor">
+                    <img width="50px" src="/imgs/skills iguales/sql2-512h.png" alt="SQL Logo">
+                </div>
+            </div>
         </div>
-        <div id="experiencia">
-
+        <div id="proyectos">
+            <h3 id="tituloProyecto">Proyectos</h3>
+            <div class="cardContenedor">
+                <div class="card1 card" >
+                    <img class="proyectoImg" src="/imgs/proyecto.png" alt="imagen del proyecto">
+                    <h3><a href="https://github.com/MarcosFdzC/tp-winform-equipo-C" target="_blank">Sistema de stocks</a></h3>
+                    <p>
+                        Aplicacion de gestion de artículos.<br>
+                        Creada con C#, .NET y SQL.<br>
+                        Trabajo práctico realizado para la actividad nº2 del curso Experiencia Universidad de <a href="https://maxiprograma.com/" target="_blank" style="text-decoration: underline;">Maxi Programa</a>.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
 <!--        REDES/CONTACTO      -->
-    <footer id="contactoSec">
-        <div id="redes">
-
+    <footer id="footer">
+        <div class="contacto">
+            <h3 class="contactoTitulo">CONTACTO: </h3>
+            <div class="grid-container">
+                <div class="grid">
+                    <label for="Nombre">Nombre: </label>
+                    <input class="borderRound" type="text">
+    
+                    <label for="Email">Email: </label>
+                    <input class="borderRound" type="email">
+    
+                    <label for="Numero">Numero: </label>
+                    <input class="borderRound" type="tel">
+    
+                    <label for="Mensaje">Mensaje: </label>
+                    <textarea class="borderRound" rows="4" cols="35"></textarea>
+                </div>
+            </div>
+            <input type="submit" name="Enviar" id="enviar">
         </div>
-        <div id="contacto">
-
+        <div class="redesContainer" id="contacto">
+            <div class="redesGitHub">
+                <a href="https://github.com/MarcosFdzC" target="_blank">
+                    <img width="50px" src="/imgs/githublogo.png" alt="GitHubLogo">
+                </a>
+            </div>
+            <div class="redesLinkedIn">
+                <a href="https://www.linkedin.com/in/marcos-fernandez-b60874278/" target="_blank">
+                    <img width="60px" src="/imgs/LinkedIn-Logos/LI-Logo.png" alt="LinkedInLogo">
+                </a>
+            </div>
+            <div class="redesInstagram">
+                <a href="https://www.instagram.com/marcosfernandzc/" target="_blank">
+                    <img width="30px" src="/imgs/instagram-logo.png" alt="InstagramLogo">
+                </a>
+            </div>
+            <div class="redesEmail">
+                <a href="mailto:marcosfernandezc1998@gmail.com">
+                    <img width="30px" src="/imgs/mailLogo.png" alt="emailLogo">
+                </a>
+                
+            </div>
         </div>
     </footer>
 </body>
