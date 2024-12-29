@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(/imgs/background/pankaj-patel-u2Ru4QBXA5Q-unsplash.jpg);
-    background-size: ;
+    background-image: url(imgs/background/pankaj-patel-u2Ru4QBXA5Q-unsplash.jpg);
+    background-size: cover;
     background-position: center;
 }
 a {
