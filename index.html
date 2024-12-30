@@ -86,27 +86,29 @@
         </div>
     </section>
 
-<!--        REDES/CONTACTO      -->
+<!--     FOOTER     -->
+     <!-- Contacto -->
     <footer id="footer">
         <div class="contacto">
             <h3 class="contactoTitulo">CONTACTO: </h3>
             <div class="grid-container">
                 <div class="grid">
                     <label for="Nombre">Nombre: </label>
-                    <input class="borderRound" type="text">
+                    <input class="borderRound" type="text" id="txtNombre">
     
                     <label for="Email">Email: </label>
-                    <input class="borderRound" type="email">
+                    <input class="borderRound" type="email" id="txtMail">
     
                     <label for="Numero">Numero: </label>
-                    <input class="borderRound" type="tel">
+                    <input class="borderRound" type="tel" id="txtTelefono">
     
                     <label for="Mensaje">Mensaje: </label>
-                    <textarea class="borderRound" rows="4" cols="35"></textarea>
+                    <textarea class="borderRound" rows="4" cols="35" id="txtMensaje"></textarea>
                 </div>
             </div>
-            <input type="submit" name="Enviar" id="enviar">
+            <input type="submit" name="Enviar" id="enviar" onclick="guardarDatos()">
         </div>
+        <!-- Redes -->
         <div class="redesContainer" id="contacto">
             <div class="redesGitHub">
                 <a href="https://github.com/MarcosFdzC" target="_blank">
